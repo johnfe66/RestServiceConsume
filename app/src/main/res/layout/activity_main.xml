@@ -10,29 +10,81 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.johnfe.restserviceconsume.MainActivity">
 
-    <Button
-        android:text="Get Data"
+    <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text=""
+        android:ems="10"
+        android:layout_below="@+id/txtnombre"
+        android:layout_alignEnd="@+id/txtnombre"
+        android:layout_marginTop="12dp"
+        android:id="@+id/txtcedula"
+        android:hint="cedula" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text=""
+        android:ems="10"
+        android:layout_below="@+id/txtcedula"
+        android:layout_alignStart="@+id/txtcedula"
+        android:layout_marginTop="10dp"
+        android:id="@+id/txtusuario"
+        android:hint="usuario" />
+
+    <Button
+        android:text="Guardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnGetData"
+        android:textAppearance="@android:style/TextAppearance.Holo.SearchResult.Title"
+        android:layout_below="@+id/txtusuario"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="61dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text=""
+        android:ems="10"
+        android:layout_below="@+id/txtusuario"
+        android:layout_alignStart="@+id/txtusuario"
+        android:layout_marginTop="14dp"
+        android:id="@+id/txtclave"
+        android:hint="clave" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginTop="12dp"
+        android:id="@+id/txtid"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="21dp"
-        android:id="@+id/btnGetData"
-        android:textAppearance="@android:style/TextAppearance.Holo.SearchResult.Title" />
+        android:hint="@string/id" />
 
-    <TextView
-        android:layout_width="match_parent"
+    <EditText
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:id="@+id/tvNombre"
-        android:layout_below="@+id/tvId"
-        android:layout_alignParentEnd="true" />
+        android:inputType="textPersonName"
+        android:text=""
+        android:ems="10"
+        android:id="@+id/txtnombre"
+        android:hint="nombre"
+        android:layout_below="@+id/txtid"
+        android:layout_alignStart="@+id/txtid" />
 
-    <TextView
-        android:layout_width="match_parent"
+    <Button
+        android:text="ventana imagen"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/tvId"
         android:layout_below="@+id/btnGetData"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignStart="@+id/btnGetData"
+        android:layout_marginTop="30dp"
+        android:id="@+id/btnImagen" />
 
 </RelativeLayout>

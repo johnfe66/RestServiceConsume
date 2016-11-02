@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">RestServiceConsume</string>
+    <string name="id">id</string>
+    <string name="title_activity_imagen">Imagen</string>
 </resources>
